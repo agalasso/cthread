@@ -1,4 +1,5 @@
 #!/bin/bash
+# -*- mode: scheme -*-
 exec guile -l ct.scm -e main -s $0 $@
 !#
 
