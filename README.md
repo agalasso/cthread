@@ -1,7 +1,7 @@
 # C-THREAD:
 ## A limited implementation of threads using call/cc
 
-This is a quick and dirty guile library that allows programs to manually switch between saved program states. Using the library strongly resembles using threads (with manual scheduling), but the implementation does not invoke the os at all. Everything is implemented using call/cc on a single OS thread.
+This is a quick and dirty guile library that allows programs to manually switch between saved program states. Using this library strongly resembles using threads (with semaphores and manual scheduling), but the implementation does not invoke the os at all. Everything is implemented using call/cc on a single OS thread.
 
 Here's how to use it:
  * First, add some cthreads to a global thread queue.
